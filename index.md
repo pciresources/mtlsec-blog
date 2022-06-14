@@ -1,3 +1,7 @@
+# We are just getting started - nothing to see here yet ;-)
+
+...
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/mtlsec/mtlsec-blog/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
