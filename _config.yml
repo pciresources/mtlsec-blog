@@ -30,8 +30,8 @@ twitter_username: mtlsec
 github_username:  mtlsec
 
 # Build settings
-theme: minima
-#theme: jekyll-theme-hacker
+#theme: minima
+theme: jekyll-theme-hacker
 #theme: jekyll-dash
 plugins:
   - jekyll-feed
