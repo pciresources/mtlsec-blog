@@ -31,7 +31,8 @@ github_username:  mtlsec
 
 # Build settings
 #theme: minima
-theme: jekyll-dash
+theme: jekyll-theme-hacker
+#theme: jekyll-dash
 #plugins:
 #  - jekyll-feed
 
