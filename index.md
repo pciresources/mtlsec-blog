@@ -4,4 +4,4 @@
 
 layout: default
 ---
-index.md with layout home..
+index.md with layout home...
