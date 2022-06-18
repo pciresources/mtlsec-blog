@@ -30,11 +30,11 @@ twitter_username: mtlsec
 github_username:  mtlsec
 
 # Build settings
-#theme: minima
+# theme: minima
 theme: jekyll-theme-hacker
 #theme: jekyll-dash
-#plugins:
-#  - jekyll-feed
+plugins:
+  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
