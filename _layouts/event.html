@@ -1,9 +1,7 @@
 ---
 layout: default
 ---
-<!-- -
-_layout/post.html
-->
+
 {% unless site.dash.show_author == false %}
   {% include author.html %}
 {% endunless %}
@@ -30,7 +28,7 @@ _layout/post.html
   <pre>
   @ {{ page.location }}
   </pre>
-  <img src="/post_image/{{ page.post_image }}" style="max-height: 200; width: auto;">
+  <img src="{{ baseurl}}/post_image/{{ page.post_image }}" style="max-height: 200; width: auto;">
 </div>
 
 {% if site.dash.disqus.shortname %}
@@ -101,3 +99,6 @@ _layout/post.html
 </script>
 
 {%- include post-footer.html -%}
+<!-- -
+_layout/post.html
+->
