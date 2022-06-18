@@ -33,6 +33,7 @@ github_username:  mtlsec
 #theme: minima
 #theme: jekyll-theme-hacker
 #theme: jekyll-dash
+remote_theme: jekyll-dash
 plugins:
   - jekyll-feed
   - jekyll-paginate
