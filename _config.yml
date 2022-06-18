@@ -32,7 +32,7 @@ github_username:  mtlsec
 # Build settings
 #theme: minima
 #theme: jekyll-theme-hacker
-theme: jekyll-dash
+#theme: jekyll-dash
 plugins:
   - jekyll-feed
   - jekyll-paginate
