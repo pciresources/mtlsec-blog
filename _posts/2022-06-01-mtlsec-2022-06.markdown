@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: event
 title:  "Mtlsec 2022-06 (Juin/June)"
 tags: irl
 date_start: 2022-06-09 18:00:00 EST
