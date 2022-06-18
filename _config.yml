@@ -24,8 +24,8 @@ subtitle: Information Security, from a Montreal perspective.
 email: erick@mtlsec.com
 description: >- # this means to ignore newlines until "baseurl:"
   Information Security, from a Montreal perspective.
-baseurl: "/mtlsec-blog" # the subpath of your site, e.g. /blog
-url: "https://mtlsec.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+#baseurl: "/mtlsec-blog" # the subpath of your site, e.g. /blog
+#url: "https://mtlsec.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: mtlsec
 github_username:  mtlsec
 
