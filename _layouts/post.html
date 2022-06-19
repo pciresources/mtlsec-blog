@@ -39,11 +39,15 @@ _layout/post.html
 
   {% endif %}
 
-
   {{ content }}
+
+  {% if page.location != null %}
   <pre>
   @ {{ page.location }}
   </pre>
+  {% endif %}
+
+
   <% if page.post_image != null %>
   <img src="{{ site.baseurl }}/post_image/{{ page.post_image }}" style="max-height: 200; width: auto;">
   {% endif %}
