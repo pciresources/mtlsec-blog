@@ -12,9 +12,7 @@ _layout/post.html
 .DependsCancelled {
 {% if page.iscancelled != null %}
 text-decoration: line-through;
-color: red;
 {% else %}
-color: black;
 {% endif %}
 }
 </style>
@@ -42,14 +40,6 @@ color: black;
   Event
   </h3>
   
-  {% if page.iscancelled != null %}
-  <p style="color: red;">
-  CANCELLED - SORRY
-  <br/><br/>
-  ANNULE - DESOLE :-(
-  </p>
-  {% endif %}
-  
   <p class="DependsCancelled">
   {{ page.date_start | date: "%-d %B %Y @ %H:%M" }}
   <br/>
@@ -60,7 +50,15 @@ color: black;
   @ {{ page.location }}
   </pre>
  
- 
+   
+  {% if page.iscancelled != null %}
+  <p style="color: red;">
+  CANCELLED - SORRY
+  <br/><br/>
+  ANNULE - DESOLE :-(
+  </p>
+  {% endif %}
+
   {% endif %}
 
   {% if page.post_image != null %}
