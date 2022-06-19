@@ -41,14 +41,51 @@ text-decoration: line-through;
   </h3>
   
   <p class="DependsCancelled">
-  {{ page.date_start | date: "%-d %B %Y @ %H:%M" }}
+  {% assign dy = page.date | date: "%a" %}
+  {% assign m = page.date_start | date: "%-m" %}
+  {% case dy %}
+  {% when "Mon" %}Lundi
+  {% when "Tue" %}Mardi
+  {% when "Wed" %}Mercredi
+  {% when "Thu" %}Jeudi
+  {% when "Fri" %}Vendredi
+  {% when "Sat" %}Samedi
+  {% when "Sun" %}Dimanche
+  {% else %}{{ dy }}
+  {% endcase %}
+  {{ page.date_start | date: "%-d" }}
+  {% case m %}
+  {% when '1' %}Janvier
+  {% when '2' %}F&eacute;vrier
+  {% when '3' %}Mars
+  {% when '4' %}Avril
+  {% when '5' %}Mai
+  {% when '6' %}Juin
+  {% when '7' %}Juillet
+  {% when '8' %}Ao&ucird;t
+  {% when '9' %}Septembre
+  {% when '10' %}Oktobre
+  {% when '11' %}Novembre
+  {% when '12' %}D&eacute;cembre
+{% endcase %}
+{{ page.date_start | date: "%Y" }}
+  
   <br/>
   <br/>
+  {% case dy %}
+  {% when "Mon" %}Monday
+  {% when "Tue" %}Tuesday
+  {% when "Wed" %}Wednesday
+  {% when "Thu" %}Thursday
+  {% when "Fri" %}Friday
+  {% when "Sat" %}Saturday
+  {% when "Sun" %}Sunday
+  {% else %}{{ dy }}
+  {% endcase %}
+
   {{ page.date_start | date: "%-d %B %Y @ %H:%M" }}
   </p>
-  <pre>
-  @ {{ page.location }}
-  </pre>
+  <pre>@ {{ page.location }}</pre>
  
    
   {% if page.iscancelled != null %}
