@@ -29,13 +29,11 @@ _layout/post.html
   <p>
   {{ page.date_start | date: "%-d %B %Y @ %H:%M" }}
   </p>
-  {% if page.cancelled == true %}
   <p style="color: red;">
   CANCELLED - SORRY
   <br/><br/>
   ANNULE - DESOLE :-(
   </p>
-  {% endif %}
 
   {% endif %}
 
