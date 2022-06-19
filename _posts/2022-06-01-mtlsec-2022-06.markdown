@@ -10,5 +10,7 @@ location: |
   1219 Crescent st., Montreal, QC H3G 1B1
   Metro: Lucien l'Allier / Guy-Concordia
 post_image: mtlsec-2022-06.jpeg
+#iscancelled: true
+isevent: true
 ---
 MTLSEC

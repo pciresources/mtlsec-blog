@@ -7,6 +7,18 @@ _layout/post.html
 {% unless site.dash.show_author == false %}
   {% include author.html %}
 {% endunless %}
+
+<style>
+.DependsCancelled {
+{% if page.iscancelled != null %}
+text-decoration: line-through;
+color: red;
+{% else %}
+color: black;
+{% endif %}
+}
+</style>
+
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   {% if site.plugins contains "jekyll/tagging" %}
@@ -16,6 +28,7 @@ _layout/post.html
       {% endfor %}
   </div>
   {% endif %}
+    
   <div class="post-date">Published on {{ page.date | date_to_string }}</div>
   {% if page.description != null %}
   <noscript>
@@ -23,30 +36,38 @@ _layout/post.html
   </noscript>
   <div id="animated-post-description" class="post-description" style="display: none;"></div>
   {% endif %}
-  
+
   {% if page.isevent != null %}
+  <h3>
+  Event
+  </h3>
   
-  <p>
-  {{ page.date_start | date: "%-d %B %Y @ %H:%M" }}
-  </p>
+  {% if page.iscancelled != null %}
   <p style="color: red;">
   CANCELLED - SORRY
   <br/><br/>
   ANNULE - DESOLE :-(
   </p>
-
   {% endif %}
-
-  {{ content }}
-
+  
+  <p class="DependsCancelled">
+  {{ page.date_start | date: "%-d %B %Y @ %H:%M" }}
+  <br/>
+  <br/>
+  {{ page.date_start | date: "%-d %B %Y @ %H:%M" }}
+  </p>
   <pre>
   @ {{ page.location }}
   </pre>
+ 
+ 
+  {% endif %}
 
-
-  <% if page.post_image != null %>
+  {% if page.post_image != null %}
   <img src="{{ site.baseurl }}/post_image/{{ page.post_image }}" style="max-height: 200; width: auto;">
   {% endif %}
+
+  {{ content }}
 </div>
 
 {% if site.dash.disqus.shortname %}
