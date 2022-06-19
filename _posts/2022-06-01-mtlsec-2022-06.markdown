@@ -13,4 +13,3 @@ post_image: mtlsec-2022-06.jpeg
 #iscancelled: true
 isevent: true
 ---
-MTLSEC
