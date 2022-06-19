@@ -93,6 +93,12 @@ dash:
     - url: https://twitter.com/mtlsec
       icon: twitter-square
       color: cyan
+    - url: https://www.facebook.com/mtlsec
+      icon: facebook-square
+      color: cyan
+    - url: https://www.linkedin.com/mtlsec
+      icon: linkedin-square
+      color: cyan
 #    - url: https://bitbrain.itch.io
 #      icon: itch-io
 #      color: red
