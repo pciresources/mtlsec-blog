@@ -24,6 +24,8 @@ _layout/post.html
   <div id="animated-post-description" class="post-description" style="display: none;"></div>
   {% endif %}
   
+  {% if page.isevent != null %}
+  
   <p>
   {{ page.date_start | date: "%-d %B %Y @ %H:%M" }}
   </p>
@@ -35,12 +37,16 @@ _layout/post.html
   </p>
   {% endif %}
 
+  {% endif %}
+
 
   {{ content }}
   <pre>
   @ {{ page.location }}
   </pre>
-  <img src="/post_image/{{ page.post_image }}" style="max-height: 200; width: auto;">
+  <% if page.post_image != null %>
+  <img src="{{ site.baseurl }}/post_image/{{ page.post_image }}" style="max-height: 200; width: auto;">
+  {% endif %}
 </div>
 
 {% if site.dash.disqus.shortname %}
