@@ -23,9 +23,19 @@ _layout/post.html
   </noscript>
   <div id="animated-post-description" class="post-description" style="display: none;"></div>
   {% endif %}
+  
   <p>
   {{ page.date_start | date: "%-d %B %Y @ %H:%M" }}
   </p>
+  {% if page.cancelled != null %}
+  <p style="color: red;">
+  CANCELLED - SORRY
+
+  ANNULE - DESOLE :-(
+  </p>
+  {% endif %}
+
+
   {{ content }}
   <pre>
   @ {{ page.location }}
