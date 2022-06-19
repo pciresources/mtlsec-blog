@@ -41,7 +41,7 @@ text-decoration: line-through;
   </h3>
   
   <p class="DependsCancelled">
-  {% assign dy = page.date | date: "%a" %}
+  {% assign dy = page.date_start | date: "%a" %}
   {% assign m = page.date_start | date: "%-m" %}
   {% case dy %}
   {% when "Mon" %}Lundi
