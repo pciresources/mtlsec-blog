@@ -69,6 +69,7 @@ text-decoration: line-through;
   {% when '12' %}D&eacute;cembre
 {% endcase %}
 {{ page.date_start | date: "%Y" }}
+{{ page.date_start | date: "@ %H:%M" }}
   
   <br/>
   <br/>
@@ -83,7 +84,7 @@ text-decoration: line-through;
   {% else %}{{ dy }}
   {% endcase %}
 
-  {{ page.date_start | date: "%-d %B %Y @ %H:%M" }}
+  {{ page.date_start | date: "%-d %B %Y @ %l:%M %p" }}
   </p>
   <pre>@ {{ page.location }}</pre>
  
