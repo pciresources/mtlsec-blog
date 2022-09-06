@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Mtlsec 2022-09 (Septembre/September)"
+tags: irl
+date_start: 2022-09-08 18:00:00 EST
+#time_start:
+location: |
+  Brutopia Brew Pub
+  Reservations "MTLSEC"
+  1219 Crescent st., Montreal, QC H3G 1B1
+  Metro: Lucien l'Allier / Guy-Concordia
+post_image: mtlsec-2022-09.jpg
+#iscancelled: true
+isevent: true
+---
